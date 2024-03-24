@@ -3,6 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import social1 from "../assets/img/socials/social1.svg";
 import social2 from "../assets/img/socials/social2.svg";
 import social3 from "../assets/img/socials/social3.svg";
+import headingImg1 from "../assets/img/headingImg1.png";
+import headingImg2 from "../assets/img/headingImg2.png";
+import heroBg from "../assets/img/heroBg.png";
 import CopyToClipboard from './CopyToClipboard';
 export default function Hero() {
   const title = "Hipster Owl";
@@ -28,11 +31,22 @@ export default function Hero() {
   const copyTitle = "Our SOL CA:";
   return (
     <section className='hero-area'>
+      <figure className='hero-Bg'>
+        <img src={heroBg} alt="" />
+      </figure>
       <Container>
         <Row>
           <Col lg={8}>
             <div className="hero-content">
-              <h1>{title}</h1>
+              <div className='heading'>
+                <figure className='heading-img1'>
+                <img src={headingImg1} alt="" />
+                </figure>
+                <h1>{title}</h1>
+                <figure className='heading-img2'>
+                  <img src={headingImg2} alt="" />
+                </figure>
+              </div>
               <p>{desc}</p>
               <div className='d-flex align-items-center'>
                 <div className="btns">

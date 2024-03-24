@@ -24,13 +24,13 @@
     }
     &.position-fixed {
         animation: headerAnimation .5s linear;
-        background-color: $primary;
-        --bs-navbar-padding-y: 24px;
+        background-color: rgb(173 81 48 / 98%);
+        --bs-navbar-padding-y: 8px;
         @include md {
-            --bs-navbar-padding-y: 20px;
+            --bs-navbar-padding-y: 5px;
         }
         @include sm {
-            --bs-navbar-padding-y: 1rem;
+            --bs-navbar-padding-y: 5px;
         }
     }
     &-menu {
@@ -40,18 +40,12 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background-color: rgba($color: #85F377, $alpha: .90);
+            background-color: rgb(173 81 48 / 94%);
             padding: 24px 16px;
             transform: translateY(100%);
             @include transition;
             &.show-menu {
                 transform: translate(0, 0);
-            }
-        }
-        & .title {
-            margin-bottom: 32px;
-            @include sm {
-                margin-bottom: 24px;
             }
         }
         & .heading-actions {
@@ -65,10 +59,10 @@
         }
     }
     &-link {
-        @include font-18;
+        @include font-24;
+        font-family: "Passion One", sans-serif;
         display: block;
-        padding: 8px 21px;
-        border-radius: 35px;
+        padding: 8px 25px;
         color: $white;
         cursor: pointer;
         @include lg {
@@ -138,10 +132,36 @@ button:focus {
 .logo{
     font-size: 34px;
     color: #010101;
-    // @include CocogoosePro-letterpress;
     letter-spacing: 3%;
     img {
         max-width: 201px;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    @include mmd{
+        justify-content: start;
+        padding-left: 20px;
+        margin-top: 15px;
+    }
+    a {
+        display: flex;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 36.94px;
+        border: 1.5px solid #000;
+        background: #1F650B;
+        &:hover{
+            border-color: $white;
+        }
     }
 }
 }

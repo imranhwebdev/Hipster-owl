@@ -36,6 +36,7 @@
             transform: translateY(-50%);
             right: -80px;
             border: 0;
+            @include transition;
             @include sm{
                 padding: 6px;
                 border-radius: 4px;
@@ -47,9 +48,16 @@
             svg{
                 font-size: 30px;
                 color: $white;
+                @include transition;
                 @include sm{
                     font-size: 25px;
                 }
+            }
+            &:hover{
+                background-color: $white;
+            }
+            &:hover svg{
+                color: $black;
             }
         }
     }
