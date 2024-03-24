@@ -42,12 +42,12 @@ export default function Header() {
     <>
       <header className={`heading ${scrolled ? 'position-fixed' : ''}`}>
         <Container className='d-flex align-items-center justify-content-between'>
-          <Link className="logo" to="/"  onClick={scrollToTop}>
+          <Link className="logo" href="#"  onClick={scrollToTop}>
           <img src={logo} alt='logo' />
           </Link>
           <nav className={`heading-menu ${isMenu ?'show-menu':''}`}>
             <div className="title d-flex align-items-center justify-content-between d-lg-none">
-              <Link className="logo" to="/"  onClick={scrollToTop}>
+              <Link className="logo" href="#"  onClick={scrollToTop}>
               <img src={logo} alt='logo' />
               </Link>
               <button className="heading-toggler" onClick={() => setIsMenu(!isMenu)}>
@@ -58,7 +58,7 @@ export default function Header() {
               </button>
             </div>
             <ul className="main_menu d-lg-flex align-items-center">
-              <Link to="about" onClick={scrollToTop} className='heading-link text-capitalize' spy={true} smooth={true} offset={-320} duration={150} >About</Link>
+              <Link to="about" className='heading-link text-capitalize' spy={true} smooth={true} offset={-320} duration={150} >About</Link>
               <Link to="howtobuy" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >How to buy</Link>
               <Link to="tokenomics" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Tokenomics</Link>
               <Link to="roadMap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>

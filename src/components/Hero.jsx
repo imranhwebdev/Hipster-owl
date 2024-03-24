@@ -48,12 +48,12 @@ export default function Hero() {
                 </figure>
               </div>
               <p>{desc}</p>
-              <div className='d-flex align-items-center'>
+              <div className='d-sm-flex align-items-center'>
                 <div className="btns">
                   <a href={btnUrl1} className='boxed-btn'>{btnTxt1}</a>
                   <a href={btnUrl2} className='boxed-btn'>{btnTxt2}</a>
                 </div>
-                <ul className="socials">
+                <ul className="socials mt-4 mt-sm-0">
                   {socials.map((item, index)=>(
                     <li key={index}><a href={item.url}><img src={item.icon} alt="" /></a></li>
                   ))}

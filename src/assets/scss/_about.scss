@@ -1,0 +1,48 @@
+.about{
+    &-area{
+        position: relative;
+        padding-top: 3%;
+        padding-bottom: 32%;
+        z-index: 1;
+        & .aboutbgShap{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+            transform: translateY(-185px);
+            opacity: 8%;
+        }
+        & .aboutTree{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    &-content{
+        .about-heading{
+            position: relative;
+            width: max-content;
+            text-transform: uppercase;
+            figure{
+                position: absolute;
+                top: 10px;
+                right: 155px;
+                @include lg{
+                    top: -10px;
+                    right: 70px;
+                }
+                @include mmd{
+                    top: -10px;
+                    right: 55px;
+                }
+            }
+        }
+        p{
+            @include font-24;
+            max-width: 662px;
+            margin-bottom: 18px;
+            font-weight: 400;
+        }
+    }
+}
