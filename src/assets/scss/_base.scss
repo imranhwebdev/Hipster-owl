@@ -50,7 +50,8 @@ h1{
 }
 
 h2{
-    @include font-80
+    @include font-80;
+    text-shadow: 5px 5px $black;
 }
 p {
     margin: 0;
