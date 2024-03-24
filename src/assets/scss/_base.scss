@@ -30,6 +30,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
+    color: $white;
     background-color: #068E3D;
 }
 
@@ -41,8 +42,12 @@ h5,
 h6 {
     font-family: "Bowlby One", sans-serif;
     font-weight: 400;
-    font-family: 'Helsinki';
 };
+
+h1{
+    @include font-120;
+    text-transform: uppercase;
+}
 
 h2{
     @include font-80
@@ -99,23 +104,23 @@ input::-webkit-inner-spin-button {
 }
 
 .container {
-   max-width: 1290px;
+   max-width: 1520px;
 }
 
-.base {
-    &-btn {
-        font-family: "Passion One", sans-serif;
-        display: inline-block;
-        border: 1px solid $primary;
-        border-radius: 5px;
-        padding: 23px 48px;
-        @include font-18;
-        @include sm {
-            font-size: 18px;
-        }
-        &:hover {
-            background-color: transparent;
-            color: $primary;
-        }
+.boxed-btn {
+    font-family: "Passion One", sans-serif;
+    display: inline-block;
+    border-radius: 9.665px;
+    color: $white;
+    background: $_C72727;
+    padding: 19px 38px;
+    @include font-26;
+    box-shadow: 5px 4px 0px 0px rgba(0, 0, 0, 0.95);
+    @include sm {
+        font-size: 18px;
+    }
+    &:hover {
+        background-color: $white;
+        color: $primary;
     }
 }

@@ -1,0 +1,47 @@
+.hero{
+    &-area{
+        padding-top: 390px;
+        padding-bottom: 590px;
+    }
+    &-content{
+        h1{
+           color: $white;
+           text-shadow: 8px 6px $black;
+        }
+        p{
+            @include font-28;
+            margin-bottom: 30px;
+            color: $white;
+            text-shadow: 2px 4px $black;
+        }
+        .btns{
+            a{
+                margin-right: 27px;
+            }
+        }
+        .socials{
+            li{
+                display: inline-block;
+                a{
+                    border-radius: 53.031px;
+                    border: 2.153px solid $black;
+                    background: $_1F650B; 
+                    padding: 11px;
+                    margin-right: 10px;
+                    width: 53px;
+                    height: 53px;
+                    display: flex;
+                }
+                &:hover a{
+                    border-color: $white;
+                }
+            }
+        }
+        & .copy{
+            h5{
+               @include font-18;
+               margin-top: 30px;
+            }
+        }
+    }
+}

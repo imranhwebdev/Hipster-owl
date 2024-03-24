@@ -24,7 +24,7 @@
     }
     &.position-fixed {
         animation: headerAnimation .5s linear;
-        background-color: #85F377;
+        background-color: $primary;
         --bs-navbar-padding-y: 24px;
         @include md {
             --bs-navbar-padding-y: 20px;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import { Link, animateScroll as scroll} from 'react-scroll';
+import { FaPaperPlane, FaTwitter } from "react-icons/fa";
 import logo from '../assets/img/Logo.svg'
 export default function Header() {
   const [isMenu, setIsMenu] = useState(false);
@@ -27,7 +28,16 @@ export default function Header() {
       behavior: 'smooth'
     });
   };
-
+  const socials = [
+    {
+      icon:<FaPaperPlane />,
+      url: "https://google.com",
+    },
+    {
+      icon:<FaTwitter />,
+      url: "https://google.com",
+    },
+  ];
   return (
     <>
       <header className={`heading ${scrolled ? 'position-fixed' : ''}`}>
@@ -52,7 +62,11 @@ export default function Header() {
               <Link to="howtobuy" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >How to buy</Link>
               <Link to="tokenomics" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Tokenomics</Link>
               <Link to="roadMap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>
-
+              <div className="socials">
+                {socials.map((item, index)=>(
+                  <a href={item.url} key={index}>{item.icon}</a>
+                ))}
+              </div>
             </ul>
           </nav>
           <div className="heading-actions d-flex align-items-center flex-wrap d-lg-none">

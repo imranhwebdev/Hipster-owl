@@ -108,6 +108,20 @@
     }
 }
 
+@mixin font-20 {
+    font-size: 20px;
+    line-height: 150%;
+    @include lg {
+        font-size: 18px;
+    }
+    @include md {
+        font-size: 16px;
+    }
+    @include sm {
+        font-size: 15px;
+    }
+}
+
 @mixin font-18 {
     font-size: 18px;
     line-height: 160%;
