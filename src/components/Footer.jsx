@@ -1,8 +1,14 @@
-import React from 'react'
+import {React, useEffect} from 'react';
+import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaPaperPlane, FaTwitter } from "react-icons/fa";
 import footerBg from "../assets/img/footer-BG.png"
 export default function Footer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   const title = "Contact us";
   const socials = [
     {
@@ -27,14 +33,14 @@ export default function Footer() {
         <Row> 
           <Col className='text-center'>
             <div className="section-title">
-              <h2>{title}</h2>
+              <h2 data-aos="zoom-in" data-aos-duration="1000">{title}</h2>
             </div>
-            <div className="socials">
+            <div className="socials" data-aos="zoom-in" data-aos-duration="1000">
                 {socials.map((item, index)=>(
                   <a href={item.url} target='_blank' key={index}>{item.icon}</a>
                 ))}
               </div>
-            <div className="btns">
+            <div className="btns" data-aos="zoom-in" data-aos-duration="1000">
                 <a href={btnUrl1} target='_blank' className='boxed-btn'>{btnTxt1}</a>
                 <a href={btnUrl2} target='_blank' className='boxed-btn'>{btnTxt2}</a>
             </div>

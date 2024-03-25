@@ -8,10 +8,9 @@
         }
         & .howtobuytopLeftImg {
             position: absolute;
-            top: 0;
+            top: -100px;
             left: 0;
             max-width: 290px;
-            transform: translateY(-32%);
             z-index: 2;
             @include lg{
                 transform: translateY(-48%);

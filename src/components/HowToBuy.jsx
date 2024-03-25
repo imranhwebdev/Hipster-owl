@@ -1,9 +1,15 @@
-import React from 'react'
+import {React, useEffect} from 'react';
+import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
 import howtobuyItemImg from "../assets/img/howtobuyItemImg.png";
 import howtobuytopLeftImg from "../assets/img/howtobuyTree.png";
 import howtobuybottomImg from "../assets/img/howtobuybottomImg.png";
 export default function HowToBuy() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
     const title = "hOW TO BUY";
     const howtobuyItems = [
         {
@@ -29,13 +35,13 @@ export default function HowToBuy() {
     ]
   return (
     <section className='howtobuy-area'>
-    <figure className='howtobuytopLeftImg'>
+    <figure className='howtobuytopLeftImg' data-aos="zoom-in-right" data-aos-duration="1200">
         <img src={howtobuytopLeftImg} alt="" />
     </figure>
       <Container>
         <Row>
             <Col>
-                <div className="section-title text-center">
+                <div className="section-title text-center" data-aos="zoom-in" data-aos-duration="1400">
                     <h2>{title}</h2>
                 </div>
             </Col>
@@ -43,7 +49,7 @@ export default function HowToBuy() {
         <Row className='howtobuy-wrapper row-gap-4 pb-4'>
             {howtobuyItems.map((item, index)=>(
                 <Col md={6} key={index}>
-                    <div className="howtobuy-singleItem">
+                    <div className="howtobuy-singleItem" data-aos="zoom-in" data-aos-duration="1400">
                         <figure className='howtobuyitemImg'>
                             <img src={item.img} alt="" />
                         </figure>
@@ -54,7 +60,7 @@ export default function HowToBuy() {
             ))}
         </Row>
       </Container>
-    <figure className='howtobuybottomImg'>
+    <figure className='howtobuybottomImg' data-aos="fade-in" data-aos-duration="1800">
         <img src={howtobuybottomImg} alt="" />
     </figure>
     </section>

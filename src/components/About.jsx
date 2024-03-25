@@ -1,9 +1,15 @@
-import React from 'react'
+import {React, useEffect} from 'react';
+import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
 import aboutHeadingImg from "../assets/img/aboutHeadingImg.png";
 import aboutBg from "../assets/img/aboutBg.png";
 import aboutTree from "../assets/img/aboutTree.png";
 export default function About() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
     const title = "What is <br> hipster owl";
     const desc1 = "This website does not constitute an offer to purchase or solicitation to sell, nor is it a recommendation​to buy or sell any token or other product. Purchasing and selling tokens is inherently risky, and holders​ must bear the risk of loss. ";
     const desc2 = "Neither the authors of this website nor any participants in the $HIPS project accept any liability for losses or taxes that holders, purchasers or sellers of $HIPS may​ incur.";
@@ -13,7 +19,7 @@ export default function About() {
         <figure className='aboutbgShap'>
             <img src={aboutBg} alt="" />
         </figure>
-        <figure className='aboutTree'>
+        <figure className='aboutTree' data-aos="fade-in" data-aos-duration="1800" data-aos-offset="-550">
             <img src={aboutTree} alt="" />
         </figure>
         <Container>
@@ -24,11 +30,11 @@ export default function About() {
                             <figure>
                                 <img src={aboutHeadingImg} alt="" />
                             </figure>
-                            <h2 dangerouslySetInnerHTML={{ __html: title }} />
+                            <h2 dangerouslySetInnerHTML={{ __html: title }}  data-aos="zoom-in" data-aos-duration="1000"/>
                         </div>
-                        <p>{desc1}</p>
-                        <p>{desc2}</p>
-                        <p>{desc3}</p>
+                        <p data-aos="zoom-in" data-aos-duration="1200">{desc1}</p>
+                        <p data-aos="zoom-in" data-aos-duration="1400">{desc2}</p>
+                        <p data-aos="zoom-in" data-aos-duration="1600">{desc3}</p>
                     </div>
                 </Col>
             </Row>

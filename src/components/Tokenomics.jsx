@@ -1,6 +1,12 @@
-import {React} from 'react';
+import {React, useEffect} from 'react';
+import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
 export default function Tokenomics() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+        });
+      }, []);
     const title = "Tokenomics";
     const desc = "Founders like you. they buy they sale their Dogewifhat 2.0";
     const singleItems = [
@@ -44,8 +50,8 @@ export default function Tokenomics() {
         <Row>
             <Col>
                 <div className="section-title text-center">
-                    <h2>{title}</h2>
-                    <p>{desc}</p>
+                    <h2  data-aos="zoom-in" data-aos-duration="1000">{title}</h2>
+                    <p  data-aos="zoom-in" data-aos-duration="1200">{desc}</p>
                 </div>
             </Col>
         </Row>
@@ -54,7 +60,7 @@ export default function Tokenomics() {
                 <div className="tokenDetails">
                     <div className="singleItem-wrapper">
                         {singleItems.map((singleItem, index) => (
-                            <div className="singleItem" key={index}>
+                            <div className="singleItem" key={index}   data-aos="zoom-in" data-aos-duration="1400">
                                 {singleItem.desc ? (
                                     <p className='desc text-center'>{singleItem.desc}</p>
                                     ) : (
@@ -70,11 +76,11 @@ export default function Tokenomics() {
                             </div>
                         ))}
                     </div>
-                    <div className="singleItem d-flex large">
+                    <div className="singleItem d-flex large"   data-aos="zoom-in" data-aos-duration="1200">
                         <h5>{tokenTitle1}</h5>
                         <span>{value2}</span>
                     </div> 
-                    <div className="singleItem large d-flex align-items-center align-items-center">
+                    <div className="singleItem large d-flex align-items-center align-items-center"   data-aos="zoom-in" data-aos-duration="1400">
                         <h5>{tokenTitle2}</h5>
                         <span>{value2}</span>
                     </div>  
