@@ -58,10 +58,10 @@ export default function Header() {
               </button>
             </div>
             <ul className="main_menu d-lg-flex align-items-center">
-              <Link to="about" className='heading-link text-capitalize' spy={true} smooth={true} offset={-320} duration={150} >About</Link>
-              <Link to="howtobuy" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >How to buy</Link>
-              <Link to="tokenomics" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Tokenomics</Link>
-              <Link to="roadMap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>
+              <Link to="about-area" className='heading-link text-capitalize' spy={true} smooth={true} offset={-100} duration={150} >About</Link>
+              <Link to="howtobuy-area" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >How to buy</Link>
+              <Link to="tokenomicsArea" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={50} >Tokenomics</Link>
+              <Link to="roadmap-area" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>
               <div className="socials">
                 {socials.map((item, index)=>(
                   <a href={item.url} target='_blank' key={index}>{item.icon}</a>
