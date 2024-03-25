@@ -1,0 +1,68 @@
+.howtobuy{
+    &-area{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30%;
+        .section-title{
+            margin-bottom: 60px;
+        }
+    }
+    &-singleItem{
+        position: relative;
+        padding-top: 48px;
+        padding-bottom: 50px;
+        background-image: url('../img/howtobuyItemBG.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 100% 100%;
+        padding-left:170px;
+        padding-right: 50px;
+        height: 100%;
+        z-index: 1;
+        @include mmd{
+            padding-left:120px;
+            padding-right: 25px;
+        }
+        @include sm{
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            padding-left: 130px;
+        }
+        @include ssm{
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+         h4{
+            font-family: "Passion One", sans-serif;
+            @include font-42;
+            text-transform: uppercase;
+            color: $heading;
+            margin-bottom: 6px;
+         }
+         p{
+            color: $primary;
+            @include font-18;
+            max-width: 459px;
+         }
+         .howtobuyitemImg{
+            position: absolute;
+            left: 15px;
+            bottom: -8px;
+            max-width: 150px;
+            @include mmd{
+                max-width: 100px;
+            }
+            @include sm{
+                max-width: 130px;
+                left: 0;
+            }
+            @include ssm{
+               left: 50%;
+               transform: translateX(-50%);
+               z-index: -1;
+               opacity: .5;
+            }
+         }
+
+    }
+}

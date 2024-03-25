@@ -2,13 +2,6 @@
 html, html body{
     overflow-x: hidden;
 }
-  
-@font-face {
-    font-family: 'Helsinki';
-    src: url('../fonts/helsinki.ttf');
-    src: local('☺'),  
-         url('../fonts/helsinki.ttf') format('truetype'), 
-}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -126,5 +119,10 @@ input::-webkit-inner-spin-button {
     &:hover {
         background-color: $white;
         color: $primary;
+    }
+}
+.section-title{
+    h2{
+        text-transform: uppercase;
     }
 }

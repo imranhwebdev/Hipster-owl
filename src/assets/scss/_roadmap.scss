@@ -1,0 +1,102 @@
+.roadmap{
+    &-area{
+        position: relative;
+        margin-top: -100px;
+        padding-bottom: 260px;
+        @include mmd{
+            margin-top: -30px;
+        }
+        @include sm{
+            margin-top: -10px;
+        }
+        & .section-title{
+            padding-bottom: 180px;
+            @include sm{
+                padding-bottom: 80px;
+            }
+        }
+        .roadmapTree{
+            max-width: 500px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 2;
+            @include lg{
+                max-width: 400px;
+            }
+            @include mmd{
+                width: 90%;
+            }
+        }
+    }
+    &-item{
+        padding: 50px 42px;
+        background-image: url('../img/roadmapItemImg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top left;
+        span{
+            color: $primary;
+            @include font-18;
+            font-weight: 400;
+            margin-bottom: 6px;
+        }
+        h4{
+            font-family: "Passion One", sans-serif;
+           @include font-42; 
+           text-transform: uppercase;
+           color: $heading;
+           margin-bottom: 0;
+           line-height: 120%;
+        }
+        @include sm{
+            text-align: center;
+        }
+        
+    }
+    
+}
+.roadmap-wrapper{
+    position: relative;
+    z-index: 1;
+}
+.roadmap-wrapper .col-md-4:nth-child(3){
+    margin-top: 35px;
+}
+
+.roadmap-wrapper .col-md-4:nth-child(4){
+    margin-top: 70px;
+    @include sm{
+        margin-top: 35px;
+    }
+}
+.roadMapimg1 {
+    max-width: 263px;
+    position: absolute;
+    left: 23%;
+    z-index: -1;
+    top: -70px;
+    @include mmd{
+        left: 18%;
+    }
+    @include sm{
+        display: none;
+    }
+}
+.roadMapimg2 {
+    position: absolute;
+    max-width: 263px;
+    right: 25%;
+    z-index: -1;
+    bottom: -100px;
+    @include lg{
+        right: 21%;
+        bottom: -70px;
+    }
+    @include mmd{
+        right: 20%;
+    }
+    @include sm{
+        display: none;
+    }
+}
