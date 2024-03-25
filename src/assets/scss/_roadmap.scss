@@ -3,6 +3,23 @@
         position: relative;
         margin-top: -100px;
         padding-bottom: 260px;
+        z-index: 1;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/roadMapBg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 98%;
+            background-position: bottom center;
+            z-index: -1;
+            @include mmd{
+                background-size: 100%;
+            }
+        }
         @include mmd{
             margin-top: -30px;
         }
@@ -13,7 +30,7 @@
         & .section-title{
             padding-bottom: 180px;
             @include sm{
-                padding-bottom: 80px;
+                padding-bottom: 50px;
             }
         }
         .roadmapTree{
@@ -26,10 +43,9 @@
                 max-width: 400px;
             }
             @include mmd{
-                width: 90%;
+                width: 50%;
             }
             @include sm{
-                bottom: 70px;
                 width: 50%;
             }
         }
@@ -56,6 +72,7 @@
         }
         @include sm{
             text-align: center;
+            padding: 30px;
         }
         
     }

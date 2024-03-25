@@ -5,8 +5,9 @@ import aboutBg from "../assets/img/aboutBg.png";
 import aboutTree from "../assets/img/aboutTree.png";
 export default function About() {
     const title = "What is <br> hipster owl";
-    const desc1 = "We're here to keep the good vibes of HIPSTER OWL going, but with a fresh twist. HIPSTER is all about the laughs, the community, and maybe a little bit of that crypto magic.";
-    const desc2 = "It's easy, it's fun, and hey, who says you can't dream about paying for cool stuff with a coin that started as a joke? Join the HIPSTER OWL crew and let's see where this rocket goes!";
+    const desc1 = "This website does not constitute an offer to purchase or solicitation to sell, nor is it a recommendation​to buy or sell any token or other product. Purchasing and selling tokens is inherently risky, and holders​ must bear the risk of loss. ";
+    const desc2 = "Neither the authors of this website nor any participants in the $HIPS project accept any liability for losses or taxes that holders, purchasers or sellers of $HIPS may​ incur.";
+    const desc3 = "The value of $HIPS may decrease and may be highly volatile. This website is not directed​ toward any person located in a jurisdiction where purchasing, selling or holding $HIPS is​ prohibited or regulated. Consult your local laws before transacting in any cryptocurrency.";
   return (
     <section className='about-area'>
         <figure className='aboutbgShap'>
@@ -17,7 +18,7 @@ export default function About() {
         </figure>
         <Container>
             <Row>
-                <Col lg={6}>
+                <Col lg={8}>
                     <div className="about-content">
                         <div className="about-heading">
                             <figure>
@@ -27,6 +28,7 @@ export default function About() {
                         </div>
                         <p>{desc1}</p>
                         <p>{desc2}</p>
+                        <p>{desc3}</p>
                     </div>
                 </Col>
             </Row>

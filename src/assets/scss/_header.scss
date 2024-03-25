@@ -106,35 +106,6 @@
         max-width: 201px;
     }
 }
-
-.socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-left: 25px;
-    @include mmd{
-        justify-content: start;
-        padding-left: 0px;
-        margin-top: 15px;
-        margin-left: 0;
-    }
-    a {
-        display: flex;
-        color: #fff;
-        width: 36px;
-        height: 36px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border-radius: 36.94px;
-        border: 1.5px solid #000;
-        background: #1F650B;
-        &:hover{
-            border-color: $white;
-        }
-    }
-}
 }
 
 .main_menu{

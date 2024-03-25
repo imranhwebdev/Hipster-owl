@@ -31,11 +31,11 @@ export default function Header() {
   const socials = [
     {
       icon:<FaPaperPlane />,
-      url: "https://google.com",
+      url: "https://t.me/HipsterOwlChat",
     },
     {
       icon:<FaTwitter />,
-      url: "https://google.com",
+      url: "https://twitter.com/HipsterOwlCoin",
     },
   ];
   return (
@@ -64,7 +64,7 @@ export default function Header() {
               <Link to="roadMap" className='heading-link text-capitalize' spy={true} smooth={true} offset={-150} duration={170} >Roadmap</Link>
               <div className="socials">
                 {socials.map((item, index)=>(
-                  <a href={item.url} key={index}>{item.icon}</a>
+                  <a href={item.url} target='_blank' key={index}>{item.icon}</a>
                 ))}
               </div>
             </ul>

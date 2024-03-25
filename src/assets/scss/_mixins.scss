@@ -26,7 +26,7 @@
         font-size: 55px;
     }
     @include sm {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
@@ -38,6 +38,9 @@
     }
     @include mmd {
         font-size: 45px;
+    }
+    @include sm {
+        font-size: 35px;
     }
 }
 

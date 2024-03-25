@@ -1,0 +1,89 @@
+.footer-area{
+    position: relative;
+    z-index: 1;
+    .section-title{
+        margin-top: 5%;
+        margin-bottom: 12%;
+        @include xxl{
+            margin-bottom: 9%;
+        }
+        @include xl{
+            margin-top: 4%;
+            margin-bottom: 8%;
+        }
+        @include lg{
+            margin-bottom: 10%;
+        }
+        @include mmd{
+            margin-bottom: 8%;
+        }
+        @include sm{
+            margin-top: 4%;
+        }
+        @include ssm{
+            margin-top: 3%;
+        }
+        h2{
+            @include sm{
+                font-size: 35px;
+            }
+            @include ssm{
+                font-size: 28px;
+            }
+        }
+    }
+    .socials {
+        @include mmd{
+            justify-content: center;
+        }
+        gap: 20px;
+        a {
+            width: 73px;
+            height: 73px;
+            border-radius: 73px;
+            border: 3px solid #AD5230;
+            background: #068E3D;
+            font-size: 35px;
+            &:hover{
+                border-color: $white;
+            }
+
+            @include lg{
+                width: 55px;
+                height: 55px;
+                font-size: 25px;
+            }
+            @include mmd{
+                width: 55px;
+                height: 55px;
+                font-size: 25px;
+            }
+            @include sm{
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
+    }
+    .btns{
+        margin-top: 2%;
+        .boxed-btn{
+          margin: 0 15px;
+          padding: 19px 48px;
+          @include lg{
+            padding:8px 25px;
+            font-size: 20px;
+            font-weight: 400;
+          }
+          @include mmd{
+            padding:8px 25px;
+          }
+        }
+    }
+    .footerBg{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+}

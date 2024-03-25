@@ -36,11 +36,16 @@
                     top: -10px;
                     right: 55px;
                 }
+                @include sm{
+                    max-width: 50px;
+                    top: 0px;
+                    right: 78px;
+                }
             }
         }
         p{
             @include font-24;
-            max-width: 662px;
+            max-width: 885px;
             margin-bottom: 18px;
             font-weight: 400;
         }

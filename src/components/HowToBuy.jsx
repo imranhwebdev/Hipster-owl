@@ -40,7 +40,7 @@ export default function HowToBuy() {
                 </div>
             </Col>
         </Row>
-        <Row className='howtobuy-wrapper row-gap-4'>
+        <Row className='howtobuy-wrapper row-gap-4 pb-4'>
             {howtobuyItems.map((item, index)=>(
                 <Col md={6} key={index}>
                     <div className="howtobuy-singleItem">
