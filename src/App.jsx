@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Roadmap from './components/Roadmap'
 import HowToBuy from './components/HowToBuy'
+import Tokenomics from './components/Tokenomics'
 import Footer from './components/Footer'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Roadmap />
       <HowToBuy />
+      <Tokenomics />
       <Footer />
     </>
   )

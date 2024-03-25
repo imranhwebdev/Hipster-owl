@@ -66,10 +66,6 @@
         color: $white;
         cursor: pointer;
         @include mmd {
-            font-weight: 600;
-            // @include font-20;
-            // color: $heading;
-            border-radius: 10px;
             padding: 13px 0;
         }
         &:hover,
@@ -93,6 +89,7 @@
             --width: 40px;
             width: var(--width);
             height: var(--width);
+            color: $white;
             @include sm {
                 --width: 32px;
             }

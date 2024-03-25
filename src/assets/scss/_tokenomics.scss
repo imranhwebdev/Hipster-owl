@@ -1,0 +1,133 @@
+.tokenomicsArea{
+    position: relative;
+    z-index: 1;
+    margin-top: -300px;
+    @include lg{
+        margin-top: -200px;
+    }
+    @include mmd{
+        margin-top: -130px;
+    }
+    @include sm{
+        margin-top: -100px;
+    }
+    @include ssm{
+        margin-top: -50px;
+    }
+    .section-title{
+        margin-bottom: 60px;
+        @include sm{
+            margin-bottom: 35px;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.70);
+            @include font-21;
+        }
+    }
+    .tokenDetails{
+        h5{
+            font-family: "Pangolin", cursive;
+            color: $white;
+            @include font-16;
+            text-transform: capitalize;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 150%;
+            @include sm{
+                font-size: 14px;
+            }
+        }
+        span{
+            font-family: "Bowlby One", sans-serif;
+            @include font-24;
+            font-weight: 400;
+            color: $white;
+            @include sm{
+                font-size: 16px;
+            }
+        }
+        .singleItem-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            column-gap: 30px;
+            @include ssm{
+                grid-template-columns: 1fr
+            }
+            .singleItem:last-child {
+                display: flex;
+                align-items: center;
+                p{
+                    max-width: 271px;
+                    margin: 0 auto;
+                    color: $white;
+                    @include font-18;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+        }
+        
+        .singleItem {
+            border-radius: 24px;
+            border: 3px solid $black;
+            background: $primary;
+            padding: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include sm{
+                margin-bottom: 20px;
+                border-radius: 10px;
+                padding: 20px;
+            }
+            & .singleItemContent{
+                .top{
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+                    padding-bottom: 22px;
+                    @include sm{
+                        padding-bottom: 18px;
+                    }
+                }
+                .bottom{
+                    padding-top: 34px;
+                    @include sm{
+                        padding-top: 18px;
+                    }
+                }
+            }
+            .singleItemContent {
+                width: 100%;
+            }
+        
+        }
+        .singleItem.large{
+            justify-content: start;
+          h5{
+            position: relative;
+            z-index: 1;
+            padding-right: 46px;
+            margin-right: 46px;
+            min-width: 205px;
+            @include mmd{
+                min-width: max-content;
+            }
+            @include sm{
+                padding-right: 20px;
+                margin-right: 20px;
+            }
+            &::after{
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: 0;
+                width: 1px;
+                height: 24px;
+                background: rgba(255, 255, 255, 0.10);
+                transform: translateY(-50%);
+            }
+          }
+        
+        }
+    }
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import howtobuyItemImg from "../assets/img/howtobuyItemImg.png";
+import howtobuytopLeftImg from "../assets/img/howtobuyTree.png";
+import howtobuybottomImg from "../assets/img/howtobuybottomImg.png";
 export default function HowToBuy() {
     const title = "hOW TO BUY";
     const howtobuyItems = [
@@ -27,6 +29,9 @@ export default function HowToBuy() {
     ]
   return (
     <section className='howtobuy-area'>
+    <figure className='howtobuytopLeftImg'>
+        <img src={howtobuytopLeftImg} alt="" />
+    </figure>
       <Container>
         <Row>
             <Col>
@@ -49,6 +54,9 @@ export default function HowToBuy() {
             ))}
         </Row>
       </Container>
+    <figure className='howtobuybottomImg'>
+        <img src={howtobuybottomImg} alt="" />
+    </figure>
     </section>
   )
 }
