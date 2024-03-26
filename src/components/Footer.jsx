@@ -2,6 +2,7 @@ import {React, useEffect} from 'react';
 import AOS from 'aos';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaPaperPlane, FaTwitter } from "react-icons/fa";
+import footerlogo from "../assets/img/footer-logo.svg"
 import footerBg from "../assets/img/footer-BG.png"
 export default function Footer() {
   useEffect(() => {
@@ -44,6 +45,17 @@ export default function Footer() {
                 <a href={btnUrl1} target='_blank' className='boxed-btn'>{btnTxt1}</a>
                 <a href={btnUrl2} target='_blank' className='boxed-btn'>{btnTxt2}</a>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <div className="footer-content text-center">
+                <a href="#" className='logo'>
+                    <img src={footerlogo} alt="" />
+                </a>
+                <p>$HIPS token is a memecoin with no intrinsic value, and is not an investment. It’s simply a community/<br/> culture token similar to $pepe. No Promises, No Utility, Purely For Entertainment Purposes</p>
+                <p className='copyright'>&copy; HIPSTER OWL {new Date().getFullYear()} - All Rights Reserved </p>
+              </div>
           </Col>
         </Row>
       </Container>

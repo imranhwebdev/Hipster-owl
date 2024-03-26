@@ -23,11 +23,11 @@ export default function Hero() {
   const socials = [
     {
       icon:social1,
-      url: "https://solscan.io/token/736jmUpuhYU5z4zMkMuc13oDEkgxKcV17QM9wM4jYKBE",
+      url: "https://dexscreener.com/solana/29s4hdvxpsunkdoevbq3mgu7dazpy7ayf4docklp8wqh",
     },
     {
       icon:social2,
-      url: "https://dexscreener.com/solana/29s4hdvxpsunkdoevbq3mgu7dazpy7ayf4docklp8wqh",
+      url: "https://solscan.io/token/736jmUpuhYU5z4zMkMuc13oDEkgxKcV17QM9wM4jYKBE",
     },
     {
       icon:social3,

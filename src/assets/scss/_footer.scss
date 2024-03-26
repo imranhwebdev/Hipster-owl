@@ -1,90 +1,144 @@
-.footer-area{
-    position: relative;
-    z-index: 1;
-    padding-bottom: 32%;
-    overflow-y: hidden;
-    .section-title{
-        margin-top: 5%;
-        margin-bottom: 12%;
-        @include xxl{
-            margin-bottom: 9%;
-        }
-        @include xl{
-            margin-top: 4%;
-            margin-bottom: 8%;
-        }
-        @include lg{
-            margin-bottom: 10%;
-        }
-        @include mmd{
-            margin-bottom: 8%;
-        }
-        @include sm{
-            margin-top: 4%;
-        }
-        @include ssm{
-            margin-top: 3%;
-        }
-        h2{
+.footer{
+    &-area{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 55px;
+        overflow-y: hidden;
+        .section-title{
+            margin-top: 100px;
+            margin-bottom: 12%;
+            @include xxxl{
+                margin-top: 6%;
+                margin-bottom: 14%;
+            }
+            @include xxl{
+                margin-top: 4%;
+                margin-bottom: 8%;
+            }
+            @include xl{
+                margin-top: 4%;
+                margin-bottom: 8%;
+            }
+            @include lg{
+                margin-top: 4%;
+                margin-bottom: 9.5%;
+            }
+            @include md{
+                margin-top: 4%;
+                margin-bottom: 9%;
+            }
             @include sm{
-                font-size: 35px;
+                margin-top: 4%;
+                margin-bottom: 8%;
             }
             @include ssm{
-                font-size: 28px;
+                margin-top: 3%;
+                margin-bottom: 8%;
+            }
+            h2{
+                @include sm{
+                    font-size: 35px;
+                }
+                @include ssm{
+                    font-size: 28px;
+                }
             }
         }
-    }
-    .socials {
-        @include mmd{
-            justify-content: center;
-        }
-        gap: 20px;
-        a {
-            width: 73px;
-            height: 73px;
-            border-radius: 73px;
-            border: 3px solid #AD5230;
-            background: #068E3D;
-            font-size: 35px;
-            &:hover{
-                border-color: $white;
-            }
-
-            @include lg{
-                width: 55px;
-                height: 55px;
-                font-size: 25px;
-            }
+        .socials {
             @include mmd{
-                width: 55px;
-                height: 55px;
-                font-size: 25px;
+                justify-content: center;
             }
-            @include sm{
-                width: 40px;
-                height: 40px;
+            gap: 20px;
+            a {
+                width: 73px;
+                height: 73px;
+                border-radius: 73px;
+                border: 3px solid #AD5230;
+                background: #068E3D;
+                font-size: 35px;
+                &:hover{
+                    border-color: $white;
+                }
+    
+                @include lg{
+                    width: 55px;
+                    height: 55px;
+                    font-size: 25px;
+                }
+                @include mmd{
+                    width: 55px;
+                    height: 55px;
+                    font-size: 25px;
+                }
+                @include sm{
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                }
+            }
+        }
+        .btns{
+            margin-top: 2%;
+            .boxed-btn{
+              margin: 0 15px;
+              padding: 19px 48px;
+              @include lg{
+                padding:8px 25px;
                 font-size: 20px;
+                font-weight: 400;
+              }
+              @include mmd{
+                padding:8px 25px;
+              }
             }
         }
-    }
-    .btns{
-        margin-top: 2%;
-        .boxed-btn{
-          margin: 0 15px;
-          padding: 19px 48px;
-          @include lg{
-            padding:8px 25px;
-            font-size: 20px;
-            font-weight: 400;
-          }
-          @include mmd{
-            padding:8px 25px;
-          }
+        .footerBg{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
         }
     }
-    .footerBg{
-        position: absolute;
-        z-index: -1;
-        width: 100%;
+    &-content{
+        max-width: 1030px;
+        margin-inline:auto;
+        margin-top: 41%;
+        @include xxl{
+            margin-top: 30%;
+        }
+        @include sm{
+            width: 90%;
+            margin-inline:auto;
+        }
+        @include ssm{
+            width: 100%;
+        }
+        .logo{
+           img{
+                max-width: 380px;
+                margin-bottom: 30px;
+                @include sm{
+                    max-width: 270px
+                }
+                @include ssm{
+                    margin-bottom: 20px;
+                    max-width: 250px
+                }
+           }
+        }
+        p{
+            @include font-24;
+            line-height: 1.6;
+            br{
+                @include mmd{
+                    display: none;
+                }
+            }
+        }
+        .copyright{
+            margin-top: 74px;
+            @include sm{
+                margin-top: 30px;
+            }
+        }
     }
 }
